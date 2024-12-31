@@ -3,7 +3,6 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-d
 import ParallaxScene from './components/ParallaxScene';
 import Sidebar from './components/Sidebar';
 import LoginForm from './components/LoginForm';
-import MobileFooter from './components/MobileFooter';
 import Dashboard from './components/Dashboard';
 
 class ErrorBoundary extends React.Component {
@@ -35,7 +34,7 @@ const App = () => {
     <Router>
       <ParallaxScene />
       <div className="content-wrapper relative z-10">
-        <div className="flex flex-col lg:flex-row min-h-screen">
+        <div className="flex flex-col-reverse lg:flex-row min-h-screen">
           <Sidebar />
           <div className="flex-grow">
             <ErrorBoundary>
@@ -47,7 +46,6 @@ const App = () => {
               </Routes>
             </ErrorBoundary>
           </div>
-          <MobileFooter />
         </div>
       </div>
     </Router>

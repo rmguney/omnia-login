@@ -57,14 +57,14 @@ const LoginForm = () => {
 
             <button 
               type="button" 
-              className="w-full bg-none hover:bg-orange-600 border border-orange-600 text-white py-2 rounded-sm transition-colors duration-300"
+              className="w-full bg-none hover:bg-orange-600 border border-orange-600 text-white hover:shadow-lg py-2 rounded-sm transition-all duration-300 font-semibold"
               onClick={handleLogin}
             >
               Giriş
             </button>
 
             <div className="text-center pb-4">
-              <a href="#" className="text-white text-sm hover:text-orange-600 transition duration-300">
+              <a href="#" className="text-white text-sm hover:text-orange-600 hover:shadow-lg transition-all duration-300">
                 Şifremi Unuttum
               </a>
             </div>

@@ -1,40 +1,80 @@
 import React from 'react';
-import { Mail, Phone } from 'lucide-react';
+import { Mail, Phone, CreditCard, ArrowLeft, Apple, PlayCircle } from 'lucide-react';
 import b2Logo from '../assets/b2logo.png';
 import coolPartner from '../assets/cool-partner.svg';
 
 const Sidebar = () => {
   return (
-    <div className="w-full lg:w-[25%] p-8 flex flex-col bg-[#070F2A] bg-opacity-80 transition duration-300 shadow-lg">
-      <div className="max-w-md mx-auto w-full flex flex-col items-center justify-center flex-grow gap-4 lg:gap-10">
+    <div className="w-full lg:w-[20%] p-4 flex flex-col bg-[#070F2A] bg-opacity-80 transition duration-300 shadow-lg">
+      <div className="max-w-md mx-auto w-full flex flex-col items-center justify-center flex-grow gap-6">
         {/* Logo */}
-        <a className="lg:mb-8" href="https://www.b2cargo.com/">
+        <a href="https://www.b2cargo.com/" className="mb-4">
           <img src={b2Logo} alt="B2 CARGO" className="w-full mx-auto max-w-[90%]" />
         </a>
-        
+
         {/* Continue Button */}
-        <div className="flex items-center hover:text-orange-600 text-white cursor-pointer transition duration-300">
-          <a href="https://www.b2cargo.com/" className="text-xl font-bold">
-            Kurumsal Siteye Devam Edin
-          </a>
-          <svg className="w-6 h-6 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M9 5l7 7-7 7" />
-          </svg>
+        <a 
+          href="https://www.b2cargo.com/" 
+          className="h-14 w-full bg-[#070F2A] bg-opacity-50 hover:bg-opacity-90 hover:text-orange-600 border border-[#070F2A] hover:border-orange-600 text-white py-2 rounded-lg transition-colors duration-300 text-center shadow-md hover:shadow-lg flex items-center justify-center"
+        >
+          <ArrowLeft className="w-5 h-5 mr-2" />
+          Kurumsal Site
+        </a>
+
+        {/* Online Ödeme */}
+        <a 
+          href="https://odeme.b2cargo.com/" 
+          className="h-14 w-full bg-[#070F2A] bg-opacity-50 hover:bg-opacity-90 hover:text-orange-600 border border-[#070F2A] hover:border-orange-600 text-white py-2 rounded-lg transition-colors duration-300 text-center shadow-md hover:shadow-lg flex items-center justify-center"
+        >
+          <CreditCard className="w-5 h-5 mr-2" />
+          Online Ödeme
+        </a>
+        
+        {/* Download App Section */}
+        <div className="w-full space-y-4">
+          <p className="text-white text-center font-semibold text-lg mb-4">B2Cargo+ Mobil</p>
+          <div className="flex flex-col sm:flex-row gap-4">
+            <a 
+              href="https://apps.apple.com/tr/app/b2cargo/id1564938924" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="flex-1 bg-[#070F2A] bg-opacity-50 hover:bg-opacity-90 border border-[#070F2A] hover:border-blue-400 text-white py-3 px-4 rounded-lg transition-colors duration-300 text-center shadow-md hover:shadow-lg flex items-center justify-center group"
+            >
+              <Apple className="w-8 h-8 mr-2 group-hover:text-blue-400 transition-colors duration-300" />
+              <div className="flex flex-col items-start">
+                <span className="font-semibold group-hover:text-blue-400 transition-colors duration-300">App Store</span>
+              </div>
+            </a>
+            <a 
+              href="https://play.google.com/store/apps/details?id=com.b2cargoplus" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="flex-1 bg-[#070F2A] bg-opacity-60 hover:bg-opacity-90 border border-[#070F2A] hover:border-green-400 text-white py-3 px-4 rounded-lg transition-colors duration-300 text-center shadow-md hover:shadow-lg flex items-center justify-center group"
+            >
+              <PlayCircle className="w-8 h-8 mr-2 group-hover:text-green-400 transition-colors duration-300" />
+              <div className="flex flex-col items-start">
+                <span className="font-semibold group-hover:text-green-400 transition-colors duration-300">Play Store</span>
+              </div>
+            </a>
+          </div>
         </div>
       </div>
 
       {/* Footer */}
-      <div className="mt-auto hidden lg:block">
-        <div className="flex items-center max-w-md mx-auto justify-between">
+      <div className="mt-auto pt-4">
+        <div className="flex flex-col items-center max-w-md mx-auto justify-between gap-4">
           <img src={coolPartner} alt="Cool Partner" className="w-28 h-28" />
-          <div className="text-white space-y-2">
-            <div className="flex items-center gap-2">
-              <Phone className="w-5 h-5" />
-              <span>+90 212 640 70 26</span>
+          <div className="text-white text-sm space-y-2 lg:mb-6">
+          <div className="flex items-center justify-center gap-2 hover:text-orange-600 transition duration-300">
+              <a href="https://www.b2cargo.com/iletisim">Şikayet, Öneri ve Yardım</a>
             </div>
-            <div className="flex items-center gap-2">
+            <div className="flex items-center gap-2 hover:text-orange-600 transition duration-300">
               <Mail className="w-5 h-5" />
-              <span>info@b2cargo.com</span>
+              <a href="mailto:info@b2cargo.com">info@b2cargo.com</a>
+            </div>
+            <div className="flex items-center gap-2 hover:text-orange-600 transition duration-300">
+              <Phone className="w-5 h-5" />
+              <a href="tel:+902126407026">+90 212 640 70 26</a>
             </div>
           </div>
         </div>
