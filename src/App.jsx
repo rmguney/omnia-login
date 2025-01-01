@@ -5,6 +5,12 @@ import Sidebar from './components/Sidebar';
 import LoginForm from './components/LoginForm';
 import Dashboard from './components/Dashboard';
 
+window.addEventListener('dragstart', function (e) {
+  if (e.target.tagName.toLowerCase() === 'img') {
+      e.preventDefault();
+  }
+});
+
 class ErrorBoundary extends React.Component {
   constructor(props) {
     super(props);

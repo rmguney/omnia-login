@@ -5,7 +5,7 @@ import coolPartner from '../assets/cool-partner.svg';
 
 const Sidebar = () => {
   return (
-    <div className="w-full lg:w-[20%] p-4 flex flex-col bg-[#070F2A] bg-opacity-80 transition duration-300 shadow-lg">
+    <div className="w-full lg:w-[20%] p-4 flex flex-col bg-[#070F2A] bg-opacity-70 transition duration-300 shadow-lg">
       <div className="max-w-md mx-auto w-full flex flex-col items-center justify-center flex-grow gap-6">
         {/* Logo */}
         <a href="https://www.b2cargo.com/" className="mb-4">
@@ -15,7 +15,7 @@ const Sidebar = () => {
         {/* Continue Button */}
         <a 
           href="https://www.b2cargo.com/" 
-          className="h-14 w-full bg-[#070F2A] bg-opacity-50 hover:bg-opacity-90 hover:text-orange-600 border border-[#070F2A] hover:border-orange-600 text-white py-2 rounded-lg transition-colors duration-300 text-center shadow-md hover:shadow-lg flex items-center justify-center"
+          className="h-14 w-full bg-[#070F2A] bg-opacity-50 hover:bg-opacity-90 hover:text-orange-600 border border-[#070F2A] hover:border-orange-600 text-white py-2 rounded-lg transition-colors duration-300 text-center shadow-md hover:shadow-lg flex items-center justify-center font-semibold"
         >
           <ArrowLeft className="w-5 h-5 mr-2" />
           Kurumsal Site
@@ -24,7 +24,7 @@ const Sidebar = () => {
         {/* Online Ödeme */}
         <a 
           href="https://odeme.b2cargo.com/" 
-          className="h-14 w-full bg-[#070F2A] bg-opacity-50 hover:bg-opacity-90 hover:text-orange-600 border border-[#070F2A] hover:border-orange-600 text-white py-2 rounded-lg transition-colors duration-300 text-center shadow-md hover:shadow-lg flex items-center justify-center"
+          className="h-14 w-full bg-[#070F2A] bg-opacity-50 hover:bg-opacity-90 hover:text-orange-600 border border-[#070F2A] hover:border-orange-600 text-white py-2 rounded-lg transition-colors duration-300 text-center shadow-md hover:shadow-lg flex items-center justify-center font-semibold"
         >
           <CreditCard className="w-5 h-5 mr-2" />
           Online Ödeme
@@ -32,7 +32,7 @@ const Sidebar = () => {
         
         {/* Download App Section */}
         <div className="w-full space-y-4">
-          <p className="text-white text-center font-semibold text-lg mb-4">B2Cargo+ Mobil</p>
+          <p className="text-white text-center font-bold text-lg mb-4" style={{textShadow: '2px 2px 4px rgba(0, 0, 0, 0.4)'}}>B2Cargo+</p>
           <div className="flex flex-col sm:flex-row gap-4">
             <a 
               href="https://apps.apple.com/tr/app/b2cargo/id1564938924" 
@@ -53,7 +53,7 @@ const Sidebar = () => {
             >
               <PlayCircle className="w-8 h-8 mr-2 group-hover:text-green-400 transition-colors duration-300" />
               <div className="flex flex-col items-start">
-                <span className="font-semibold group-hover:text-green-400 transition-colors duration-300">Play Store</span>
+                <span className="font-semibold group-hover:text-green-400 transition-colors duration-300">Google Play</span>
               </div>
             </a>
           </div>
@@ -65,10 +65,10 @@ const Sidebar = () => {
         <div className="flex flex-col items-center max-w-md mx-auto justify-between gap-4">
           <img src={coolPartner} alt="Cool Partner" className="w-28 h-28" />
           <div className="text-white text-sm space-y-2 lg:mb-6">
-          <div className="flex items-center justify-center gap-2 hover:text-orange-600 transition duration-300">
+          <div className="flex items-center justify-center gap-2 hover:text-orange-600 transition duration-300 ">
               <a href="https://www.b2cargo.com/iletisim">Şikayet, Öneri ve Yardım</a>
             </div>
-            <div className="flex items-center gap-2 hover:text-orange-600 transition duration-300">
+            <div className="flex items-center gap-2 hover:text-orange-600 transition duration-300 ">
               <Mail className="w-5 h-5" />
               <a href="mailto:info@b2cargo.com">info@b2cargo.com</a>
             </div>

@@ -21,26 +21,29 @@ const LoginForm = () => {
         </div>
 
         {/* Login Form */}
-        <div className="mt-24 text-center bg-[#070F2A] bg-opacity-80 shadow-lg px-6 rounded-sm">
-          <h1 className="text-orange-600 text-4xl font-bold m-2 pt-8">OMNIA</h1>
-          <p className="text-white mb-4">Online İşlemler</p>
+        <div className="mt-24 text-center bg-[#070F2A] bg-opacity-70 shadow-xl px-6 rounded-lg">
+          <h1 className="text-orange-600 text-4xl font-extrabold m-2 pt-8 tracking-wider"
+                  style={{
+                    textShadow: '3px 3px 5px rgba(0, 0, 0, 0.6)',
+                  }}> OMNIA</h1>
+          <p className="text-white mb-4 font-semibold">Online İşlemler</p>
 
           <form className="space-y-4">
             <div className="space-y-1 text-left">
-              <label className="text-white text-sm">Kullanıcı Adı</label>
+              <label className="text-white text-sm font-semibold">Kullanıcı Adı</label>
               <input 
                 type="email" 
                 placeholder="Kullanıcı adınızı yazın..." 
-                className="w-full rounded-sm p-2 bg-orange-600 bg-opacity-0 border border-gray-500 hover:border-orange-600 transition duration-300 text-white"
+                className="w-full rounded-md p-2 bg-orange-600 bg-opacity-0 border border-gray-500 hover:border-orange-600 transition duration-300 text-white"
               />
             </div>
 
             <div className="space-y-1 text-left">
-              <label className="text-white text-sm">Şifre</label>
+              <label className="text-white text-sm font-semibold">Şifre</label>
               <input 
                 type="password" 
                 placeholder="****************" 
-                className="w-full p-2 rounded-sm bg-orange-600 bg-opacity-0 border border-gray-500 hover:border-orange-600 transition duration-300 text-white"
+                className="w-full p-2 rounded-md bg-orange-600 bg-opacity-0 border border-gray-500 hover:border-orange-600 transition duration-300 text-white"
               />
             </div>
 
@@ -48,7 +51,7 @@ const LoginForm = () => {
               <input 
                 type="checkbox" 
                 id="remember" 
-                className="rounded-sm border-white text-orange-600 focus:ring-orange-600"
+                className="rounded-md border-white text-orange-600 focus:ring-orange-600"
               />
               <label htmlFor="remember" className="ml-2 text-white text-sm hover:text-orange-600 transition duration-300">
                 Beni Hatırla
@@ -57,7 +60,7 @@ const LoginForm = () => {
 
             <button 
               type="button" 
-              className="w-full bg-none hover:bg-orange-600 border border-orange-600 text-white hover:shadow-lg py-2 rounded-sm transition-all duration-300 font-semibold"
+              className="w-full bg-none hover:bg-orange-600 border border-orange-600 text-white hover:shadow-lg py-2 rounded-md transition duration-300 font-semibold"
               onClick={handleLogin}
             >
               Giriş
@@ -72,7 +75,9 @@ const LoginForm = () => {
         </div>
 
         {/* Footer */}
-        <div className="mt-2 text-center text-xs text-orange-600 font-bold">
+        <div className="mt-2 text-center text-xs text-orange-600 font-bold"                  style={{
+                    textShadow: '3px 3px 5px rgba(0, 0, 0, 0.6)',
+                  }}>
           Powered by Navis Kurumsal, brand of B2Group<br />
           All Rights Reserved
         </div>
