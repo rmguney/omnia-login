@@ -28,10 +28,10 @@ const ParallaxScene = () => {
       <div className="relative w-full h-full bg-cover bg-center bg-no-repeat z-[3]" 
            style={{ backgroundImage: `url(${mountain})` }}
            data-depth="0.3" />
-       <div className="absolute scale-[0.60] w-full h-full bg-no-repeat bg-top top-0 z-[2]"
+      <div className="relative w-full h-full bg-cover bg-center bg-no-repeat z-[2]" 
            style={{ backgroundImage: `url(${cloud_1})` }}
            data-depth="0.45" />
-      <div className="absolute scale-100 w-full h-full bg-no-repeat top-0 z-[2] hidden lg:block"
+      <div className="relative w-full h-full bg-cover bg-center bg-no-repeat z-[2]" 
            style={{ backgroundImage: `url(${cloud_2})` }}
            data-depth="0.4" />  
 
