@@ -1,21 +1,23 @@
 import React from 'react';
-import { Mail, Phone, CreditCard, ArrowLeft, Apple, PlayCircle } from 'lucide-react';
+import { Mail, Phone, CreditCard, ArrowLeft } from 'lucide-react';
 import b2Logo from '../assets/b2logo.png';
-import coolPartner from '../assets/cool-partner.svg';
+import coolPartner from '../assets/cool-partner.png';
+import appStoreBadge from '../assets/apple.webp';
+import playStoreBadge from '../assets/google.png';
 
 const Sidebar = () => {
   return (
-    <div className="w-full lg:w-[20%] p-4 flex flex-col bg-[#070F2A] bg-opacity-70 transition duration-300 shadow-lg">
-      <div className="max-w-md mx-auto w-full flex flex-col items-center justify-center flex-grow gap-6">
+    <div className="w-full lg:w-[19%] p-4 flex flex-col bg-[#070F2A] bg-opacity-70 transition duration-300 shadow-lg">
+      <div className="max-w-md mx-auto w-full flex flex-col items-center justify-center flex-grow gap-5">
         {/* Logo */}
-        <a href="https://www.b2cargo.com/" className="mb-4">
+        <a href="https://www.b2cargo.com/" className="lg:mb-4">
           <img src={b2Logo} alt="B2 CARGO" className="w-full mx-auto max-w-[90%]" />
         </a>
 
         {/* Continue Button */}
         <a 
           href="https://www.b2cargo.com/" 
-          className="h-14 w-full text-sm bg-[#070F2A] bg-opacity-50 hover:bg-opacity-90 hover:text-orange-600 border border-[#070F2A] hover:border-orange-600 text-white py-2 rounded-lg transition-colors duration-300 text-center shadow-md hover:shadow-lg flex items-center justify-center font-semibold"
+          className="h-14 w-full text-sm bg-[#070F2A] bg-opacity-50 hover:bg-opacity-90 hover:text-orange-600 border border-transparent hover:border-orange-600 text-white py-2 rounded-lg transition-colors duration-300 text-center shadow-md hover:shadow-lg flex items-center justify-center font-semibold"
         >
           <ArrowLeft className="w-5 h-5 mr-2" />
           Kurumsal Site
@@ -24,7 +26,7 @@ const Sidebar = () => {
         {/* Online Ödeme */}
         <a 
           href="https://odeme.b2cargo.com/" 
-          className="h-14 w-full text-sm bg-[#070F2A] bg-opacity-50 hover:bg-opacity-90 hover:text-orange-600 border border-[#070F2A] hover:border-orange-600 text-white py-2 rounded-lg transition-colors duration-300 text-center shadow-md hover:shadow-lg flex items-center justify-center font-semibold"
+          className="h-14 w-full text-sm bg-[#070F2A] bg-opacity-50 hover:bg-opacity-90 hover:text-orange-600 border border-transparent hover:border-orange-600 text-white py-2 rounded-lg transition-colors duration-300 text-center shadow-md hover:shadow-lg flex items-center justify-center font-semibold"
         >
           <CreditCard className="w-5 h-5 mr-2" />
           Online Ödeme
@@ -32,29 +34,33 @@ const Sidebar = () => {
         
         {/* Download App Section */}
         <div className="w-full space-y-1">
-          <p className="text-white text-center font-bold text-sm" style={{textShadow: '2px 2px 4px rgba(0, 0, 0, 0.4)'}}>B2Cargo+ mobil uygulamamızı indirin:</p>
-          <div className="flex flex-col xl:flex-row gap-4">
+          <p className="text-white text-center font-semibold text-sm lg:mt-4" style={{textShadow: '2px 2px 4px rgba(0, 0, 0, 0.4)'}}>
+            B2Cargo+ Mobil Uygulamamızı İndirin:
+          </p>
+          <div className="flex flex-row gap-4">
             <a 
               href="https://apps.apple.com/tr/app/b2cargo/id1564938924" 
               target="_blank" 
               rel="noopener noreferrer" 
-              className="flex-1 bg-[#070F2A] bg-opacity-50 hover:bg-opacity-90 border border-[#070F2A] hover:border-blue-400 text-white py-3 px-4 rounded-lg transition-colors duration-300 text-center shadow-md hover:shadow-lg flex items-center justify-center group"
+              className="flex-1 flex items-center justify-center hover:shadow-lg border border-transparent hover:border-orange-600 rounded-lg transition duration-300"
             >
-              <Apple className="w-8 h-8 mr-2 group-hover:text-blue-400 transition-colors duration-300" />
-              <div className="flex flex-col items-start">
-                <span className="font-semibold group-hover:text-blue-400 transition-colors duration-300 text-sm">App Store</span>
-              </div>
+              <img
+                src={appStoreBadge}
+                alt="App Store'dan İndir"
+                className="rounded-lg shadow-sm"
+              />
             </a>
             <a 
               href="https://play.google.com/store/apps/details?id=com.b2cargoplus" 
               target="_blank" 
               rel="noopener noreferrer" 
-              className="flex-1 bg-[#070F2A] bg-opacity-60 hover:bg-opacity-90 border border-[#070F2A] hover:border-green-400 text-white py-3 px-4 rounded-lg transition-colors duration-300 text-center shadow-md hover:shadow-lg flex items-center justify-center group"
+              className="flex-1 flex items-center justify-center hover:shadow-lg border border-transparent hover:border-orange-600 rounded-lg transition duration-300"
             >
-              <PlayCircle className="w-9 h-9 mr-2 group-hover:text-green-400 transition-colors duration-300" />
-              <div className="flex flex-col items-start">
-                <span className="font-semibold group-hover:text-green-400 transition-colors duration-300 text-sm">Google Play</span>
-              </div>
+              <img
+                src={playStoreBadge}
+                alt="Google Play'den İndir"
+                className="rounded-lg shadow-sm"
+              />
             </a>
           </div>
         </div>
@@ -65,10 +71,10 @@ const Sidebar = () => {
         <div className="flex flex-col items-center max-w-md mx-auto justify-between gap-4">
           <img src={coolPartner} alt="Cool Partner" className="w-28 h-28" />
           <div className="text-white text-xs space-y-2 lg:mb-6">
-          <div className="flex items-center justify-center gap-2 hover:text-orange-600 transition duration-300 ">
+            <div className="flex items-center justify-center gap-2 hover:text-orange-600 transition duration-300">
               <a href="https://www.b2cargo.com/iletisim">Şikayet, Öneri ve Yardım</a>
             </div>
-            <div className="flex items-center gap-2 hover:text-orange-600 transition duration-300 ">
+            <div className="flex items-center gap-2 hover:text-orange-600 transition duration-300">
               <Mail className="w-5 h-5" />
               <a href="mailto:info@b2cargo.com">info@b2cargo.com</a>
             </div>
