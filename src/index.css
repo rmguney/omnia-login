@@ -8,6 +8,8 @@ body, html {
     overflow-x: hidden;
     min-height: 100vh;
     height: 100%;
+    font-family: 'Ubuntu', sans-serif;
+
 }
 
 #root {
@@ -18,9 +20,14 @@ body, html {
 
 @font-face {
     font-family: 'Ubuntu';
-    src: url('../fonts/ubuntu-regular.ttf') format('truetype');
+    src: url('assets/Ubuntu/Ubuntu-Regular.ttf') format('truetype');
 }
 
-body {
-    font-family: 'Ubuntu', sans-serif;
+@font-face {
+    font-family: 'Ubuntu-Bold';
+    src: url('assets/Ubuntu/Ubuntu-Bold.ttf') format('truetype');
+}
+
+h1 {
+    font-family: 'Ubuntu-Bold', sans-serif;
 }

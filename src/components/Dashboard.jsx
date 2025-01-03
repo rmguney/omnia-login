@@ -14,9 +14,9 @@ const Dashboard = () => {
   return (
     <div className="min-h-screen flex flex-col items-center justify-center px-4 sm:px-8 py-6 lg:p-10">
       <h1
-        className="text-3xl sm:text-4xl lg:text-5xl font-extrabold mb-6 sm:mb-8 lg:mb-12 text-center leading-relaxed tracking-wide text-orange-500"
+        className="text-3xl sm:text-4xl lg:text-5xl mb-6 sm:mb-8 lg:mb-12 text-center leading-relaxed tracking-wide text-orange-500"
         style={{
-          textShadow: '3px 3px 5px rgba(0, 0, 0, 0.7)',
+          textShadow: '3px 3px 6px rgba(0, 0, 0, 0.8)',
         }}
       >
         Hoşgeldiniz {/* Kullanıcı adı*/}!
@@ -42,14 +42,14 @@ const Dashboard = () => {
                   filter: 'drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.6))', 
                 }}
               />
-              <h2
-                className="text-lg font-semibold text-white mb-2 group-hover:text-orange-500 transition-colors duration-300 text-center"
+              <span
+                className="text-lg font-semibold text-white group-hover:text-orange-500 transition-colors duration-300 text-center"
                 style={{
                   textShadow: '3px 3px 5px rgba(0, 0, 0, 0.6)',
                 }}
               >
                 {card.title}
-              </h2>
+              </span>
             </div>
           </a>
         ))}

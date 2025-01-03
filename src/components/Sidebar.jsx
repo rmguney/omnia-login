@@ -7,59 +7,59 @@ import playStoreBadge from '../assets/google.png';
 
 const Sidebar = () => {
   return (
-    <div className="w-full lg:w-[19%] p-4 flex flex-col bg-[#070F2A] bg-opacity-70 transition duration-300 shadow-lg">
-      <div className="max-w-md mx-auto w-full flex flex-col items-center justify-center flex-grow gap-5">
+    <div className="w-full lg:w-[18%] p-4 flex flex-col bg-[#070F2A] bg-opacity-60 transition duration-300 shadow-lg">
+      <div className="max-w-md mx-auto w-full flex flex-col items-center justify-center flex-grow gap-3">
         {/* Logo */}
-        <a href="https://www.b2cargo.com/" className="lg:mb-4">
+        <a href="https://www.b2cargo.com/" className="lg:mb-8">
           <img src={b2Logo} alt="B2 CARGO" className="w-full mx-auto max-w-[90%]" />
         </a>
 
         {/* Continue Button */}
         <a 
           href="https://www.b2cargo.com/" 
-          className="h-14 w-full text-sm bg-[#070F2A] bg-opacity-50 hover:bg-opacity-90 hover:text-orange-600 border border-transparent hover:border-orange-600 text-white py-2 rounded-lg transition-colors duration-300 text-center shadow-md hover:shadow-lg flex items-center justify-center font-semibold"
+          className="h-12 w-full text-sm bg-[#070F2A] bg-opacity-40 hover:bg-opacity-70 hover:text-orange-600 border border-transparent hover:border-orange-600 text-white py-2 rounded-lg transition-colors duration-300 text-center shadow-md hover:shadow-lg flex items-center justify-center"
         >
-          <ArrowLeft className="w-5 h-5 mr-2" />
+          <ArrowLeft className="w-6 h-6 mr-2" />
           Kurumsal Site
         </a>
 
         {/* Online Ödeme */}
         <a 
           href="https://odeme.b2cargo.com/" 
-          className="h-14 w-full text-sm bg-[#070F2A] bg-opacity-50 hover:bg-opacity-90 hover:text-orange-600 border border-transparent hover:border-orange-600 text-white py-2 rounded-lg transition-colors duration-300 text-center shadow-md hover:shadow-lg flex items-center justify-center font-semibold"
+          className="h-12 w-full text-sm bg-[#070F2A] bg-opacity-40 hover:bg-opacity-70 hover:text-orange-600 border border-transparent hover:border-orange-600 text-white py-2 rounded-lg transition-colors duration-300 text-center shadow-md hover:shadow-lg flex items-center justify-center"
         >
-          <CreditCard className="w-5 h-5 mr-2" />
+          <CreditCard className="w-6 h-6 mr-2" />
           Online Ödeme
         </a>
         
         {/* Download App Section */}
-        <div className="w-full space-y-1">
-          <p className="text-white text-center font-semibold text-sm lg:mt-4" style={{textShadow: '2px 2px 4px rgba(0, 0, 0, 0.4)'}}>
+        <div className="w-full space-y-1 lg:mt-5">
+          <p className="text-white text-center text-sm lg:mt-4" style={{textShadow: '2px 2px 4px rgba(0, 0, 0, 0.4)'}}>
             B2Cargo+ Mobil Uygulamamızı İndirin:
           </p>
-          <div className="flex flex-row gap-4">
+          <div className="flex flex-row gap-2">
             <a 
               href="https://apps.apple.com/tr/app/b2cargo/id1564938924" 
               target="_blank" 
               rel="noopener noreferrer" 
-              className="flex-1 flex items-center justify-center hover:shadow-lg border border-transparent hover:border-orange-600 rounded-lg transition duration-300"
+              className="flex-1 flex items-center justify-center hover:shadow-lg border border-transparent hover:border-orange-600 rounded-xl transition duration-300"
             >
               <img
                 src={appStoreBadge}
                 alt="App Store'dan İndir"
-                className="rounded-lg shadow-sm"
+                className="rounded-xl shadow-sm"
               />
             </a>
             <a 
               href="https://play.google.com/store/apps/details?id=com.b2cargoplus" 
               target="_blank" 
               rel="noopener noreferrer" 
-              className="flex-1 flex items-center justify-center hover:shadow-lg border border-transparent hover:border-orange-600 rounded-lg transition duration-300"
+              className="flex-1 flex items-center justify-center hover:shadow-lg border border-transparent hover:border-orange-600 rounded-xl transition duration-300"
             >
               <img
                 src={playStoreBadge}
                 alt="Google Play'den İndir"
-                className="rounded-lg shadow-sm"
+                className="rounded-xl shadow-sm"
               />
             </a>
           </div>
@@ -75,12 +75,16 @@ const Sidebar = () => {
               <a href="https://www.b2cargo.com/iletisim">Şikayet, Öneri ve Yardım</a>
             </div>
             <div className="flex items-center gap-2 hover:text-orange-600 transition duration-300">
-              <Mail className="w-5 h-5" />
-              <a href="mailto:info@b2cargo.com">info@b2cargo.com</a>
+              <a href="mailto:info@b2cargo.com" className="flex items-center gap-2">
+                <Mail className="w-4 h-4" />
+                info@b2cargo.com
+              </a>
             </div>
             <div className="flex items-center gap-2 hover:text-orange-600 transition duration-300">
-              <Phone className="w-5 h-5" />
-              <a href="tel:+902126407026">+90 212 640 70 26</a>
+              <a href="tel:+902126407026" className="flex items-center gap-2">
+                <Phone className="w-4 h-4" />
+                +90 212 640 70 26
+              </a>
             </div>
           </div>
         </div>

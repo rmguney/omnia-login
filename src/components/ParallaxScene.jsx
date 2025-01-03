@@ -21,7 +21,7 @@ const ParallaxScene = () => {
     <div id="scene" ref={sceneRef} className="fixed w-[108%] h-[108%] overflow-hidden -left-[4%] -top-[4%]">
       <div className="relative w-full h-full  bg-cover bg-center bg-no-repeat z-[4]" 
            style={{ backgroundImage: `url(${road})` }}
-           data-depth="0.4" />
+           data-depth="0.40" />
       <div className="relative w-full h-full bg-cover bg-center bg-no-repeat z-[1]" 
            style={{ backgroundImage: `url(${sky})` }}
            data-depth="0.15" />
@@ -30,10 +30,10 @@ const ParallaxScene = () => {
            data-depth="0.3" />
       <div className="relative w-full h-full bg-cover bg-center bg-no-repeat z-[2]" 
            style={{ backgroundImage: `url(${cloud_1})` }}
-           data-depth="0.45" />
+           data-depth="0.43" />
       <div className="relative w-full h-full bg-cover bg-center bg-no-repeat z-[2]" 
            style={{ backgroundImage: `url(${cloud_2})` }}
-           data-depth="0.4" />  
+           data-depth="0.36" />  
 
     </div>
   );
