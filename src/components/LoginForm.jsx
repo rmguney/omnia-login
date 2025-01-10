@@ -47,16 +47,16 @@ const LoginForm = () => {
               />
             </div>
 
-            <label className="flex items-center">
+            <div className="flex items-center">
               <input 
                 type="checkbox" 
                 id="remember" 
                 className="rounded-md border-white text-orange-600 focus:ring-orange-600"
               />
-              <span className="ml-2 text-white text-sm hover:text-orange-600 transition duration-300">
+              <label htmlFor="remember" className="ml-2 text-white text-sm hover:text-orange-600 transition duration-300">
                 Beni Hatırla
-              </span>
-            </label>
+              </label>
+            </div>
 
             <button 
               type="button" 

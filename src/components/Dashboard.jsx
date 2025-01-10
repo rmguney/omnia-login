@@ -1,13 +1,15 @@
 import React from 'react';
-import { DeliveryIcon, WarehouseIcon, ComputerIcon, UsersIcon, BoxIcon } from '../assets/icons.jsx';
+import { DeliveryIcon, WarehouseIcon, ComputerIcon, UsersIcon, BoxIcon, ControlPanelIcon, FinanceIcon } from '../assets/icons.jsx';
 
 const Dashboard = () => {
   const cards = [
-    { title: 'Teslimat', description: '', url: 'http://onlineislemler.b2cargo.com:81/panel/home', icon: BoxIcon },
+    { title: 'Kargo Takip', description: '', url: 'http://onlineislemler.b2cargo.com:81/panel/home', icon: BoxIcon },
     { title: 'Depo', description: '', url: 'http://onlineislemler.b2cargo.com:81/panel/whouse', icon: WarehouseIcon },
+    { title: 'Kontrol Paneli', description: '', url: 'http://onlineislemler.b2cargo.com:90/staffhome', icon:  ControlPanelIcon },
     { title: 'Personel', description: '', url: 'http://onlineislemler.b2cargo.com:90/staffhome', icon: UsersIcon },
-    { title: 'Kargo Dağıtım', description: '', url: 'https://mobil.b2cargo.com/login', icon: DeliveryIcon },
-    { title: 'İnteraktif Depo', description: '', url: 'https://b2interactive.vercel.app/', icon: ComputerIcon },
+    { title: 'Filo Yönetim', description: '', url: 'http://onlineislemler.b2cargo.com:90/staffhome', icon: DeliveryIcon },
+    { title: 'Muhasebe ve Finans', description: '', url: 'https://mobil.b2cargo.com/login', icon: FinanceIcon },
+    { title: 'Mobil Web', description: '', url: 'https://mobil.b2cargo.com/login', icon: ComputerIcon },
 
   ];
 

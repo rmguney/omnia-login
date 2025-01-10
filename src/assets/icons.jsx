@@ -36,3 +36,33 @@ export const BoxIcon = (props) => (
     <path d="M2.95969 6.64132L12 11.1615L15.4112 9.4559L6.52456 4.37785L6.42229 4.43152C4.64855 5.36234 3.6059 5.90949 2.95969 6.64132Z" />
   </svg>
 );
+
+export const ControlPanelIcon = (props) => (
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none" stroke="currentColor" strokeWidth="2" {...props}>
+    <circle cx="6" cy="8" r="3" strokeLinecap="round" strokeLinejoin="round" />
+    <line x1="6" y1="11" x2="6" y2="27" strokeLinecap="round" strokeLinejoin="round" />
+    <circle cx="16" cy="20" r="3" strokeLinecap="round" strokeLinejoin="round" />
+    <line x1="16" y1="5" x2="16" y2="17" strokeLinecap="round" strokeLinejoin="round" />
+    <line x1="16" y1="23" x2="16" y2="27" strokeLinecap="round" strokeLinejoin="round" />
+    <circle cx="26" cy="14" r="3" strokeLinecap="round" strokeLinejoin="round" />
+    <line x1="26" y1="17" x2="26" y2="27" strokeLinecap="round" strokeLinejoin="round" />
+    <line x1="26" y1="5" x2="26" y2="11" strokeLinecap="round" strokeLinejoin="round" />
+  </svg>
+);
+
+
+export const FinanceIcon = (props) => (
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="currentColor" stroke="none" strokeWidth="2" {...props}>
+    <circle cx="20.5" cy="10.5" r="4.5" strokeLinecap="round" strokeLinejoin="round" />
+    <path
+      d="M29.9 16.5c-.2-.3-.5-.5-.9-.5-2.2 0-4.3 1-5.6 2.8l-.9 1.2c-1.1 1.3-2.8 2-4.5 2h-3c-.6 0-1-.4-1-1s.4-1 1-1h1.9c1.6 0 3.1-1.3 3.1-2.9 0 0 0-.1 0-.1 0-.5-.5-1-1-1h-6.1c-3.6 0-6.5 1.6-8.1 4.2l-2.7 4.2c-.2.3-.2.7 0 1l3 5c.1.2.4.4.6.5.1 0 .1 0 .2 0 .2 0 .4-.1.6-.2 3.8-2.5 8.2-3.8 12.7-3.8 3.3 0 6.3-1.8 7.9-4.7l2.7-4.8c.1-.2.1-.6 0-.9z"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+    <path
+      d="M14 10.5c0-2.5 1.5-4.7 3.6-5.8-1.1-1.6-2.7-2.7-4.5-2.7C11 2 9 4 9 6.5S11 11 13.5 11c.2 0 .3 0 .5-.1 0-.1 0-.2 0-.4z"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+  </svg>
+);
