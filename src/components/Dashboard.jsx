@@ -1,14 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { DeliveryIcon, WarehouseIcon, ComputerIcon, UsersIcon, BoxIcon, ControlPanelIcon, FinanceIcon } from '../assets/icons.jsx';
 
 const Dashboard = () => {
+  const [hoveredCard, setHoveredCard] = useState(null);
   const cards = [
     { title: 'Kargo Takip', description: '', url: 'http://onlineislemler.b2cargo.com:81/panel/home', icon: BoxIcon },
     { title: 'Depo', description: '', url: 'http://onlineislemler.b2cargo.com:81/panel/whouse', icon: WarehouseIcon },
-    { title: 'Kontrol Paneli', description: '', url: 'http://onlineislemler.b2cargo.com:90/staffhome', icon:  ControlPanelIcon },
     { title: 'Personel', description: '', url: 'http://onlineislemler.b2cargo.com:90/staffhome', icon: UsersIcon },
-    { title: 'Filo Yönetim', description: '', url: 'http://onlineislemler.b2cargo.com:90/staffhome', icon: DeliveryIcon },
-    { title: 'Muhasebe ve Finans', description: '', url: 'https://mobil.b2cargo.com/login', icon: FinanceIcon },
+    { title: 'Kontrol Paneli', description: '', url: 'http://onlineislemler.b2cargo.com:90/staffhome', icon:  ControlPanelIcon },
+    { title: 'Muhasebe ve Finans', description: 'Çok yakında hizmetinizde!', url: '#', icon: FinanceIcon },
+    { title: 'Filo Yönetim', description: 'Çok yakında hizmetinizde!', url: '#', icon: DeliveryIcon },
     { title: 'Mobil Web', description: '', url: 'https://mobil.b2cargo.com/login', icon: ComputerIcon },
 
   ];
@@ -36,6 +37,8 @@ const Dashboard = () => {
             href={card.url}
             className="group p-4 lg:p-6 bg-[#070F2A] hover:bg-opacity-60 bg-opacity-30 rounded-lg border-2 border-transparent hover:border-orange-600 transition-all duration-300 flex flex-col items-center justify-between transform hover:scale-105 hover:-translate-y-1 shadow-lg hover:shadow-xl"
             style={{ animationDelay: `${index * 100}ms` }}
+            onMouseEnter={() => setHoveredCard(index)}
+            onMouseLeave={() => setHoveredCard(null)}
           >
             <div className="flex flex-col items-center">
               <card.icon
@@ -53,6 +56,11 @@ const Dashboard = () => {
                 {card.title}
               </span>
             </div>
+            {hoveredCard === index && card.description && (
+              <div className="absolute -top-11 bg-[#070F2A] bg-opacity-60 text-white p-2 rounded shadow-lg">
+                {card.description}
+              </div>
+            )}
           </a>
         ))}
       </div>
